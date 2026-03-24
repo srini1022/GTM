@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy E-Commerce - Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-83NFRBF5CX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-83NFRBF5CX');
+</script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">DummyShop</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" id="nav-home" data-event-category="navigation" data-event-action="click" data-event-label="nav-home">Home</a></li>
+                    <li><a href="products.html" id="nav-products" data-event-category="navigation" data-event-action="click" data-event-label="nav-products">Products</a></li>
+                    <li><a href="cart.html" id="nav-cart" data-event-category="navigation" data-event-action="click" data-event-label="nav-cart">Cart (<span id="cart-count">0</span>)</a></li>
+                    <li><a href="contact.html" id="nav-contact" data-event-category="navigation" data-event-action="click" data-event-label="nav-contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="checkout-page">
+            <div class="container">
+                <h2>Checkout</h2>
+                <button class="btn" id="back-to-cart-btn" data-event-category="navigation" data-event-action="click" data-event-label="back-to-cart">Back to Cart</button>
+                <form id="checkout-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <textarea id="address" name="address" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="payment">Payment Method:</label>
+                        <select id="payment" name="payment" required>
+                            <option value="">Select Payment</option>
+                            <option value="credit">Credit Card</option>
+                            <option value="debit">Debit Card</option>
+                            <option value="paypal">PayPal</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn" id="place-order-btn" data-event-category="purchase" data-event-action="submit" data-event-label="place-order">Place Order</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="newsletter">
+                <h3>Subscribe to Newsletter</h3>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn" id="newsletter-submit" data-event-category="form" data-event-action="submit" data-event-label="newsletter">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-links">
+                <a href="contact.html" id="footer-contact-link" data-event-category="navigation" data-event-action="click" data-event-label="footer-contact">Contact Us</a>
+                <a href="products.html" id="footer-products-link" data-event-category="navigation" data-event-action="click" data-event-label="footer-products">Products</a>
+            </div>
+            <div class="social-links">
+                <a href="#" id="facebook-link" data-event-category="social" data-event-action="click" data-event-label="facebook">Facebook</a>
+                <a href="#" id="twitter-link" data-event-category="social" data-event-action="click" data-event-label="twitter">Twitter</a>
+                <a href="#" id="instagram-link" data-event-category="social" data-event-action="click" data-event-label="instagram">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

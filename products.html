@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy E-Commerce - Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-83NFRBF5CX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-83NFRBF5CX');
+</script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">DummyShop</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" id="nav-home" data-event-category="navigation" data-event-action="click" data-event-label="nav-home">Home</a></li>
+                    <li><a href="products.html" id="nav-products" data-event-category="navigation" data-event-action="click" data-event-label="nav-products">Products</a></li>
+                    <li><a href="cart.html" id="nav-cart" data-event-category="navigation" data-event-action="click" data-event-label="nav-cart">Cart (<span id="cart-count">0</span>)</a></li>
+                    <li><a href="contact.html" id="nav-contact" data-event-category="navigation" data-event-action="click" data-event-label="nav-contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="products-page">
+            <div class="container">
+                <h2>All Products</h2>
+                <div class="filters">
+                    <button class="btn filter-btn" id="filter-all" data-event-category="filter" data-event-action="click" data-event-label="all">All</button>
+                    <button class="btn filter-btn" id="filter-price-low" data-event-category="filter" data-event-action="click" data-event-label="price-low">Price: Low to High</button>
+                    <button class="btn filter-btn" id="filter-price-high" data-event-category="filter" data-event-action="click" data-event-label="price-high">Price: High to Low</button>
+                    <button class="btn filter-btn" id="filter-new" data-event-category="filter" data-event-action="click" data-event-label="new">New Arrivals</button>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card" data-product-id="1" data-product-name="Dummy Product 1" data-product-price="19.99">
+                        <img src="assets/images/1.jpg" alt="Dummy Product 1" id="product-image-1" data-event-category="product" data-event-action="click" data-event-label="product-image-1">
+                        <h3>Dummy Product 1</h3>
+                        <p class="price">$19.99</p>
+                        <button class="btn view-details-btn" id="view-details-1" data-product-id="1" data-event-category="product" data-event-action="click" data-event-label="view-details-1">View Details</button>
+                        <button class="btn add-to-cart-btn" id="add-to-cart-1" data-product-id="1" data-product-name="Dummy Product 1" data-product-price="19.99" data-event-category="cart" data-event-action="add" data-event-label="add-to-cart-1">Add to Cart</button>
+                    </div>
+                    <div class="product-card" data-product-id="2" data-product-name="Dummy Product 2" data-product-price="29.99">
+                        <img src="assets/images/2.jpg" alt="Dummy Product 2" id="product-image-2" data-event-category="product" data-event-action="click" data-event-label="product-image-2">
+                        <h3>Dummy Product 2</h3>
+                        <p class="price">$29.99</p>
+                        <button class="btn view-details-btn" id="view-details-2" data-product-id="2" data-event-category="product" data-event-action="click" data-event-label="view-details-2">View Details</button>
+                        <button class="btn add-to-cart-btn" id="add-to-cart-2" data-product-id="2" data-product-name="Dummy Product 2" data-product-price="29.99" data-event-category="cart" data-event-action="add" data-event-label="add-to-cart-2">Add to Cart</button>
+                    </div>
+                    <div class="product-card" data-product-id="3" data-product-name="Dummy Product 3" data-product-price="39.99">
+                        <img src="assets/images/1.jpg" alt="Dummy Product 3" id="product-image-3" data-event-category="product" data-event-action="click" data-event-label="product-image-3">
+                        <h3>Dummy Product 3</h3>
+                        <p class="price">$39.99</p>
+                        <button class="btn view-details-btn" id="view-details-3" data-product-id="3" data-event-category="product" data-event-action="click" data-event-label="view-details-3">View Details</button>
+                        <button class="btn add-to-cart-btn" id="add-to-cart-3" data-product-id="3" data-product-name="Dummy Product 3" data-product-price="39.99" data-event-category="cart" data-event-action="add" data-event-label="add-to-cart-3">Add to Cart</button>
+                    </div>
+                    <div class="product-card" data-product-id="4" data-product-name="Dummy Product 4" data-product-price="49.99">
+                        <img src="assets/images/2.jpg" alt="Dummy Product 4" id="product-image-4" data-event-category="product" data-event-action="click" data-event-label="product-image-4">
+                        <h3>Dummy Product 4</h3>
+                        <p class="price">$49.99</p>
+                        <button class="btn view-details-btn" id="view-details-4" data-product-id="4" data-event-category="product" data-event-action="click" data-event-label="view-details-4">View Details</button>
+                        <button class="btn add-to-cart-btn" id="add-to-cart-4" data-product-id="4" data-product-name="Dummy Product 4" data-product-price="49.99" data-event-category="cart" data-event-action="add" data-event-label="add-to-cart-4">Add to Cart</button>
+                    </div>
+                    <div class="product-card" data-product-id="5" data-product-name="Dummy Product 5" data-product-price="59.99">
+                        <img src="assets/images/1.jpg" alt="Dummy Product 5" id="product-image-5" data-event-category="product" data-event-action="click" data-event-label="product-image-5">
+                        <h3>Dummy Product 5</h3>
+                        <p class="price">$59.99</p>
+                        <button class="btn view-details-btn" id="view-details-5" data-product-id="5" data-event-category="product" data-event-action="click" data-event-label="view-details-5">View Details</button>
+                        <button class="btn add-to-cart-btn" id="add-to-cart-5" data-product-id="5" data-product-name="Dummy Product 5" data-product-price="59.99" data-event-category="cart" data-event-action="add" data-event-label="add-to-cart-5">Add to Cart</button>
+                    </div>
+                    <div class="product-card" data-product-id="6" data-product-name="Dummy Product 6" data-product-price="69.99">
+                        <img src="assets/images/2.jpg" alt="Dummy Product 6" id="product-image-6" data-event-category="product" data-event-action="click" data-event-label="product-image-6">
+                        <h3>Dummy Product 6</h3>
+                        <p class="price">$69.99</p>
+                        <button class="btn view-details-btn" id="view-details-6" data-product-id="6" data-event-category="product" data-event-action="click" data-event-label="view-details-6">View Details</button>
+                        <button class="btn add-to-cart-btn" id="add-to-cart-6" data-product-id="6" data-product-name="Dummy Product 6" data-product-price="69.99" data-event-category="cart" data-event-action="add" data-event-label="add-to-cart-6">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="newsletter">
+                <h3>Subscribe to Newsletter</h3>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn" id="newsletter-submit" data-event-category="form" data-event-action="submit" data-event-label="newsletter">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-links">
+                <a href="contact.html" id="footer-contact-link" data-event-category="navigation" data-event-action="click" data-event-label="footer-contact">Contact Us</a>
+                <a href="products.html" id="footer-products-link" data-event-category="navigation" data-event-action="click" data-event-label="footer-products">Products</a>
+            </div>
+            <div class="social-links">
+                <a href="#" id="facebook-link" data-event-category="social" data-event-action="click" data-event-label="facebook">Facebook</a>
+                <a href="#" id="twitter-link" data-event-category="social" data-event-action="click" data-event-label="twitter">Twitter</a>
+                <a href="#" id="instagram-link" data-event-category="social" data-event-action="click" data-event-label="instagram">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
